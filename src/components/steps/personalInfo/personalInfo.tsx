@@ -1,5 +1,5 @@
-import { FormButton } from "@/src/components/atoms/button/button";
-import { FormField } from "@/src/components/atoms/formField/formField";
+import { FormButton } from "@/src/components/button/button";
+import { FormField } from "@/src/components/formField/formField";
 import { ageAtom, indexAtom, nameAtom } from "@/src/store/stateStore";
 import { validation } from "@/src/utils/validation";
 import { useAtom } from "jotai";

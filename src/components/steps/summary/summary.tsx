@@ -12,8 +12,8 @@ import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemText from '@mui/material/ListItemText';
 import Divider from '@mui/material/Divider';
-import { FormButton } from "../../atoms/button/button";
-import { Headline } from "../../atoms/headline/headline";
+import { FormButton } from "../../button/button";
+import { Headline } from "../../headline/headline";
 
 
 export const Summary = () => {
