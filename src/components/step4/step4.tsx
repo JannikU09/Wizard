@@ -52,10 +52,6 @@ export const Step4 = () => {
                 </ListItem>
                 <Divider component="li" />
                 <ListItem>
-                    <ListItemText primary={eMail} />
-                </ListItem>
-                <Divider component="li" />
-                <ListItem>
                     <ListItemText primary={street} />
                     <ListItemText primary={number} />
                 </ListItem>
@@ -63,6 +59,10 @@ export const Step4 = () => {
                 <ListItem>
                     <ListItemText primary={plz} />
                     <ListItemText primary={ort} />
+                </ListItem>
+                <Divider component="li" />
+                <ListItem>
+                    <ListItemText primary={eMail} />
                 </ListItem>
                 <Divider component="li" />
                 <ListItem>
