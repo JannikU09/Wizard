@@ -1,6 +1,5 @@
 import { Box } from "@mui/material";
 import { TextField } from "@mui/material";
-import "./formField.css";
 
 interface FormFieldProps {
     label: string;
