@@ -3,7 +3,7 @@ import { useAtom } from "jotai";
 import { FormButton } from "../atoms/button/button";
 import { FormField } from "../atoms/formField/formField";
 import { indexAtom, numberAtom, ortAtom, plzAtom, streetAtom } from "@/src/store/stateStore";
-import { validation } from "@/src/store/validation";
+import { validation } from "@/src/utils/validation";
 import "./step2.css";
 
 export const Step2 = () => {

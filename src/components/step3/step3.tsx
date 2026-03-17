@@ -3,7 +3,7 @@ import { FormButton } from "../atoms/button/button";
 import { FormField } from "../atoms/formField/formField";
 import { eMailAtom, indexAtom, phoneNumberAtom } from "@/src/store/stateStore";
 import React from "react";
-import { validation } from "@/src/store/validation";
+import { validation } from "@/src/utils/validation";
 
 export const Step3 = () => {
 
