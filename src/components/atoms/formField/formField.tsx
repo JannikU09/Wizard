@@ -8,6 +8,7 @@ interface FormFieldProps {
     value?: string;
     helperText?: string;
     error?: boolean;
+    placeholder?: string
 }
 
 export const FormField: React.FC<FormFieldProps> = ({
@@ -16,7 +17,8 @@ export const FormField: React.FC<FormFieldProps> = ({
     handleChange,
     value,
     helperText,
-    error
+    error,
+    placeholder
 }) => {
     return (
 
@@ -41,6 +43,7 @@ export const FormField: React.FC<FormFieldProps> = ({
                     type="text"
                     value={value ?? ''}
                     error={error}
+                    placeholder={placeholder}
                 />
             </Box>
         </div>
