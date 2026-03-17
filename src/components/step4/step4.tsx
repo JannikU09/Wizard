@@ -48,6 +48,10 @@ export const Step4 = () => {
                 </ListItem>
                 <Divider component="li" />
                 <ListItem>
+                    <ListItemText primary={`Alter: ${age}`} />
+                </ListItem>
+                <Divider component="li" />
+                <ListItem>
                     <ListItemText primary={eMail} />
                 </ListItem>
                 <Divider component="li" />
@@ -63,10 +67,6 @@ export const Step4 = () => {
                 <Divider component="li" />
                 <ListItem>
                     <ListItemText primary={phoneNumber} />
-                </ListItem>
-                <Divider component="li" />
-                <ListItem>
-                    <ListItemText primary={age} />
                 </ListItem>
             </List>
             <FormButton text="Back" variant="contained" id="back" type="button" onClick={() => setIndex(index - 1)} />
