@@ -1,0 +1,8 @@
+.residenceInfo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 400px;
+}
