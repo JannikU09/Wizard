@@ -1,11 +1,11 @@
 import { useAtom } from "jotai";
-import { FormButton } from "../atoms/button/button";
-import { FormField } from "../atoms/formField/formField";
+import { FormButton } from "../../atoms/button/button";
+import { FormField } from "../../atoms/formField/formField";
 import { eMailAtom, indexAtom, phoneNumberAtom } from "@/src/store/stateStore";
 import React from "react";
 import { validation } from "@/src/utils/validation";
 
-export const Step3 = () => {
+export const ContactInfo = () => {
 
     const [phoneNumber, setPhoneNumber] = useAtom(phoneNumberAtom);
     const [eMail, setEMail] = useAtom(eMailAtom);

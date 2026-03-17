@@ -12,11 +12,11 @@ import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemText from '@mui/material/ListItemText';
 import Divider from '@mui/material/Divider';
-import { FormButton } from "../atoms/button/button";
-import { Headline } from "../atoms/headline/headline";
+import { FormButton } from "../../atoms/button/button";
+import { Headline } from "../../atoms/headline/headline";
 
 
-export const Step4 = () => {
+export const Summary = () => {
 
     const name = useAtomValue(nameAtom);
     const eMail = useAtomValue(eMailAtom);

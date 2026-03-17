@@ -4,7 +4,7 @@ import { ageAtom, indexAtom, nameAtom } from "@/src/store/stateStore";
 import { validation } from "@/src/utils/validation";
 import { useAtom } from "jotai";
 
-export const Step1 = () => {
+export const PersonalInfo = () => {
 
     const [name, setName] = useAtom(nameAtom);
     const [age, setAge] = useAtom(ageAtom);

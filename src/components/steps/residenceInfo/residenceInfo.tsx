@@ -1,12 +1,12 @@
 import React from "react";
 import { useAtom } from "jotai";
-import { FormButton } from "../atoms/button/button";
-import { FormField } from "../atoms/formField/formField";
+import { FormButton } from "../../atoms/button/button";
+import { FormField } from "../../atoms/formField/formField";
 import { indexAtom, numberAtom, ortAtom, plzAtom, streetAtom } from "@/src/store/stateStore";
 import { validation } from "@/src/utils/validation";
-import "./step2.css";
+import "./residenceInfo.css";
 
-export const Step2 = () => {
+export const ResidenceInfo = () => {
 
     const [street, setStreet] = useAtom(streetAtom);
     const [number, setNumber] = useAtom(numberAtom);
@@ -42,12 +42,11 @@ export const Step2 = () => {
         ) {
             setIndex(index + 1);
         }
-
     }
 
     return (
         <>
-            <form className="step2" onSubmit={handleSubmit}>
+            <form className="residenceInfo" onSubmit={handleSubmit}>
                 <FormField label="Straße" handleChange={handleStreet} value={street} error={street === "" ? true : false} />
                 <FormField label="Hausnummer" width="125px" handleChange={handleNumber} value={number} error={number === "" ? true : false} />
                 <FormField label="PLZ" width="125px" handleChange={handlePLZ} value={plz} error={plz.length === 5 && validation.isNumeric(plz) === true ? false : true} />
