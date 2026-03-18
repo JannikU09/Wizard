@@ -1,12 +1,15 @@
 import { useAtom, useAtomValue } from "jotai";
-import { indexAtom, nameAtom } from "@/src/store/stateStore";
-import { eMailAtom } from "@/src/store/stateStore";
-import { streetAtom } from "@/src/store/stateStore";
-import { numberAtom } from "@/src/store/stateStore";
-import { plzAtom } from "@/src/store/stateStore";
-import { ortAtom } from "@/src/store/stateStore";
-import { phoneNumberAtom } from "@/src/store/stateStore";
-import { ageAtom } from "@/src/store/stateStore";
+import {
+    indexAtom,
+    nameAtom,
+    ageAtom,
+    streetAtom,
+    numberAtom,
+    plzAtom,
+    ortAtom,
+    eMailAtom,
+    phoneNumberAtom
+} from "@/src/store/stateStore";
 
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
@@ -14,6 +17,7 @@ import ListItemText from '@mui/material/ListItemText';
 import Divider from '@mui/material/Divider';
 import { FormButton } from "../../button/button";
 import { Headline } from "../../headline/headline";
+import { useReset } from "@/src/utils/reset";
 
 
 export const Summary = () => {
@@ -27,6 +31,8 @@ export const Summary = () => {
     const phoneNumber = useAtomValue(phoneNumberAtom);
     const age = useAtomValue(ageAtom);
     const [index, setIndex] = useAtom(indexAtom);
+
+    const reset = useReset();
 
     const style = {
         py: 0,
@@ -70,6 +76,7 @@ export const Summary = () => {
                 </ListItem>
             </List>
             <FormButton text="Back" variant="contained" id="back" type="button" onClick={() => setIndex(index - 1)} />
+            <FormButton text="Reset" variant="outlined" id="reset" type="reset" onClick={reset} />
         </div>
     )
 
