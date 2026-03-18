@@ -27,12 +27,7 @@ export const FormField: React.FC<FormFieldProps> = ({
                 margin: "auto 5px"
             }}
         >
-            <Box
-                component="form"
-                sx={{ m: 1, width: width }}
-                noValidate
-                autoComplete="off"
-            >
+            <Box sx={{ m: 1, width: width }}>
                 <TextField
                     className="formField"
                     helperText={helperText}
