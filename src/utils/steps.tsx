@@ -6,7 +6,6 @@ import { Summary } from "../components/steps/summary/summary";
 interface FlowStep {
     id: string;
     component: React.ReactNode;
-    label?: string;
 }
 
 export const steps: FlowStep[] = [
