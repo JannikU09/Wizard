@@ -11,4 +11,18 @@
     background-color: red;
     height: 15px;
     transition: all 0.5s ease-in-out;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.text {
+    font-size: 14px;
+    padding: 0 4px;
+    vertical-align: middle;
+    text-align: right;
+    border-radius: 25px;
+    color: white;
+    background-color: darkred;
+    width: max-content;
 }
