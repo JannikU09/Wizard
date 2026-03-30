@@ -18,7 +18,11 @@ export const ProgressBar = () => {
             <div
                 className="progressBar"
                 style={{ width: `${percentage}%` }}
-            />
+            >
+                <div className="text">
+                    {percentage + " %"}
+                </div>
+            </div>
         </div>
     )
 }
