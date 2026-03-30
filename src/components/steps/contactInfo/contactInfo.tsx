@@ -36,8 +36,11 @@ export const ContactInfo = () => {
 
     return (
         <>
-            <form onSubmit={handleSubmit}>
-                <FormField label="E-Mail" placeholder="m.muster@example.de" handleChange={handleEMail} value={eMail} error={eMail === "" ? true : false} />
+            <form
+                onSubmit={handleSubmit}
+                autoComplete="off"
+            >
+                <FormField label="E-Mail" placeholder="e.x@mple.de" handleChange={handleEMail} value={eMail} error={eMail === "" ? true : false} />
                 <FormField label="Telefonnummer" placeholder="z.B. +49..." handleChange={handlePhoneNumber} value={phoneNumber} error={validation.isNumeric(phoneNumber) === true ? false : true} />
 
                 <FormButton text="Back" variant="contained" id="back" type="button" onClick={() => setIndex(index - 1)} />
