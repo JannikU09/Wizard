@@ -1,5 +1,5 @@
 .progressBarContainer {
-    width: 100%;
+    width: 400px;
     height: 15px;
     background-color: gray;
     margin-bottom: 10px;
@@ -10,7 +10,7 @@
     border-radius: 25px;
     background-color: red;
     height: 15px;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.75s ease-in-out;
     display: flex;
     justify-content: flex-end;
     align-items: center;
