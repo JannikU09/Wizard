@@ -9,7 +9,7 @@ export const ProgressBar = () => {
 
     const index = useAtomValue(indexAtom);
 
-    const percentage = ((index + 1) / steps.length) * 100;
+    const percentage = Math.round((index + 1) / steps.length * 100);
 
     return (
         <div className="progressBarContainer">
