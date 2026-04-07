@@ -48,7 +48,11 @@ export const ResidenceInfo = () => {
 
     return (
         <>
-            <form className="residenceInfo" onSubmit={handleSubmit}>
+            <form
+                className="residenceInfo"
+                onSubmit={handleSubmit}
+                autoComplete="off"
+            >
                 <FormField label="Straße" handleChange={handleStreet} value={street} error={street === "" ? true : false} />
                 <FormField label="Hausnummer" width="125px" handleChange={handleNumber} value={number} error={number === "" ? true : false} />
                 <FormField label="PLZ" width="125px" handleChange={handlePLZ} value={plz} error={plz.length === 5 && validation.isNumeric(plz) === true ? false : true} />

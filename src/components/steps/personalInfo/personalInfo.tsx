@@ -30,7 +30,10 @@ export const PersonalInfo = () => {
 
     return (
         <>
-            <form onSubmit={handleSubmit} className="step1">
+            <form
+                onSubmit={handleSubmit}
+                autoComplete="off"
+            >
                 <FormField label="Name" handleChange={handleName} value={name} error={name === "" ? true : false} />
                 <FormField label="Age" handleChange={handleAge} value={age} error={validation.isNumeric(age) !== true ? true : false} helperText={validation.isNumeric(age) !== true ? "Nur gültige Zahlen" : ""} />
 

@@ -1,0 +1,28 @@
+.progressBarContainer {
+    width: 400px;
+    height: 15px;
+    background-color: gray;
+    margin-bottom: 10px;
+    border-radius: 25px;
+}
+
+.progressBar {
+    height: 100%;
+    border-radius: 25px;
+    background-color: red;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    transition: all 0.75s ease-out;
+}
+
+.text {
+    height: 100%;
+    font-size: 14px;
+    padding: 0 4px;
+    vertical-align: middle;
+    border-radius: 25px;
+    color: white;
+    background-color: darkred;
+    width: max-content;
+}
